@@ -11,16 +11,16 @@ import UIKit
 class SearchViewController: UIViewController
 {
     //----------------------------------------------------------------
-    // MARK:-
     // MARK:- Properties
     //----------------------------------------------------------------
     let logoImageView       = UIImageView()
     let userNameTextField   = GFTextField()
     let callToActionButton  = GFButton(backgroundColor: .systemBlue, title: "Get Followers")
     
+    var isUserNameEntered: Bool { return !userNameTextField.text!.isEmpty }
+    
     
     //----------------------------------------------------------------
-    // MARK:-
     // MARK:- View Lifecycle Methods
     //----------------------------------------------------------------
     override func viewDidLoad()
@@ -30,6 +30,8 @@ class SearchViewController: UIViewController
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
+        
+        createDismissKeyboardTapGesture()
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -41,7 +43,6 @@ class SearchViewController: UIViewController
     
     
     //----------------------------------------------------------------
-    // MARK:-
     // MARK:- Custom Methods
     //----------------------------------------------------------------
     func configureLogoImageView()
@@ -62,6 +63,7 @@ class SearchViewController: UIViewController
     func configureTextField()
     {
         view.addSubview(userNameTextField)
+        userNameTextField.delegate = self
 
         NSLayoutConstraint.activate([
             userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -74,6 +76,7 @@ class SearchViewController: UIViewController
     func configureCallToActionButton()
     {
         view.addSubview(callToActionButton)
+        callToActionButton.addTarget(self, action: #selector(pushFollowerListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -81,5 +84,38 @@ class SearchViewController: UIViewController
             callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+    
+    func createDismissKeyboardTapGesture()
+    {
+        let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func pushFollowerListVC()
+    {
+        guard isUserNameEntered else
+        {
+            print("No Username entered")
+            return
+        }
+        
+        let followerListVC          = FollowerListViewController()
+        followerListVC.username     = userNameTextField.text
+        followerListVC.title        = userNameTextField.text
+        navigationController?.pushViewController(followerListVC, animated: true)
+    }
+}
+
+//--------------------------------------------------------------------
+// MARK:-
+// MARK:- Extension
+//--------------------------------------------------------------------
+extension SearchViewController: UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        pushFollowerListVC()
+        return true
     }
 }

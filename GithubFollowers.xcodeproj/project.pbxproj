@@ -13,6 +13,7 @@
 		FDD1549A25C00D9700F45B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD1549925C00D9700F45B07 /* SceneDelegate.swift */; };
 		FDD154A125C00D9E00F45B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD154A025C00D9E00F45B07 /* Assets.xcassets */; };
 		FDD154A425C00D9E00F45B07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD154A225C00D9E00F45B07 /* LaunchScreen.storyboard */; };
+		FDD3D25C25C26D1000E16A37 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3D25B25C26D1000E16A37 /* FollowerListViewController.swift */; };
 		FDDB9C2F25C1784C00BB9A0E /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB9C2E25C1784C00BB9A0E /* GFButton.swift */; };
 		FDDB9C3425C17DA000BB9A0E /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDB9C3325C17DA000BB9A0E /* GFTextField.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		FDD154A025C00D9E00F45B07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD154A325C00D9E00F45B07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD154A525C00D9E00F45B07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD3D25B25C26D1000E16A37 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 		FDDB9C2E25C1784C00BB9A0E /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		FDDB9C3325C17DA000BB9A0E /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				FDD154A525C00D9E00F45B07 /* Info.plist */,
 				FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */,
 				FDDB9C3325C17DA000BB9A0E /* GFTextField.swift */,
+				FDD3D25B25C26D1000E16A37 /* FollowerListViewController.swift */,
 			);
 			path = GithubFollowers;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				FDDB9C3425C17DA000BB9A0E /* GFTextField.swift in Sources */,
 				FD86786625C10C3E00EC67F6 /* SearchViewController.swift in Sources */,
 				FDDB9C2F25C1784C00BB9A0E /* GFButton.swift in Sources */,
+				FDD3D25C25C26D1000E16A37 /* FollowerListViewController.swift in Sources */,
 				FDD1549825C00D9700F45B07 /* AppDelegate.swift in Sources */,
 				FD86786925C10CC900EC67F6 /* FavoritesListViewController.swift in Sources */,
 				FDD1549A25C00D9700F45B07 /* SceneDelegate.swift in Sources */,

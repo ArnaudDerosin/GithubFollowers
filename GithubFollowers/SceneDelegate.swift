@@ -11,14 +11,12 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate
 {
     //----------------------------------------------------------------
-    // MARK:-
     // MARK:- Properties
     //----------------------------------------------------------------
     var window: UIWindow?
 
     
     //----------------------------------------------------------------
-    // MARK:-
     // MARK:- View Lifecycle Methods
     //----------------------------------------------------------------
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)
@@ -31,8 +29,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = CreateTabbar()
+        window?.rootViewController = createTabbar()
         window?.makeKeyAndVisible()
+        
+        configureNavigationBar()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -65,7 +65,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
 
     
     //----------------------------------------------------------------
-    // MARK:-
     // MARK:- Custom Methods
     //----------------------------------------------------------------
     func createSearchNC() -> UINavigationController
@@ -90,9 +89,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
     {
         let tabbar = UITabBarController()
         UITabBar.appearance().tintColor = .systemBlue
-        tabbar.viewControllers = [CreateSearchNC(), CreateFavoritesNC()]
+        tabbar.viewControllers = [createSearchNC(), createFavoritesNC()]
         
         return tabbar
+    }
+    
+    func configureNavigationBar()
+    {
+        UINavigationBar.appearance().tintColor = .systemGray2
     }
 
 }
