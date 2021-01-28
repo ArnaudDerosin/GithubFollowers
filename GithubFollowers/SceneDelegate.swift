@@ -68,7 +68,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
     // MARK:-
     // MARK:- Custom Methods
     //----------------------------------------------------------------
-    func CreateSearchNC() -> UINavigationController
+    func createSearchNC() -> UINavigationController
     {
         let searchVC = SearchViewController()
         searchVC.title = "Search"
@@ -77,7 +77,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         return UINavigationController(rootViewController: searchVC)
     }
     
-    func CreateFavoritesNC() -> UINavigationController
+    func createFavoritesNC() -> UINavigationController
     {
         let favoritesListVC = FavoritesListViewController()
         favoritesListVC.title = "Favorites"
@@ -86,10 +86,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         return UINavigationController(rootViewController: favoritesListVC)
     }
     
-    func CreateTabbar() -> UITabBarController
+    func createTabbar() -> UITabBarController
     {
         let tabbar = UITabBarController()
-        UITabBar.appearance().tintColor = .systemRed
+        UITabBar.appearance().tintColor = .systemBlue
         tabbar.viewControllers = [CreateSearchNC(), CreateFavoritesNC()]
         
         return tabbar
