@@ -1,36 +1,34 @@
 //
-//  GFButton.swift
+//  GFTitleLabel.swift
 //  GithubFollowers
 //
-//  Created by Arnaud DEROSIN on 2021/01/27.
+//  Created by Arnaud DEROSIN on 2021/01/28.
 //  Copyright © 2021 Arnaud Derosin. All rights reserved.
 //
 
 import UIKit
 
-class GFButton: UIButton
+class GFTitleLabel: UILabel
 {
     //----------------------------------------------------------------
     // MARK:- View Lifecycle Methods
     //----------------------------------------------------------------
-    // Used when you create the view programmatically.
     override init(frame: CGRect)
     {
         super.init(frame: frame)
         configure()
     }
     
-    // Used when the view is created from storyboard/xib.
     required init?(coder: NSCoder)
     {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(backgroundColor: UIColor, title: String)
+    init(textAlignement: NSTextAlignment, fontSize: CGFloat)
     {
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        self.setTitle(title, for: .normal)
+        self.textAlignment                          = textAlignment
+        self.font                                   = UIFont.systemFont(ofSize: fontSize, weight: .bold)
         configure()
     }
     
@@ -38,12 +36,13 @@ class GFButton: UIButton
     //----------------------------------------------------------------
     // MARK:- Custom Methods
     //----------------------------------------------------------------
-    // Can only be called in this class, set up the look of the button
     private func configure()
     {
-        layer.cornerRadius                          = 10
-        titleLabel?.textColor                       = .white
-        titleLabel?.font                            = UIFont.preferredFont(forTextStyle: .headline)
+        textColor                                   = .label
+        adjustsFontSizeToFitWidth                   = true
+        minimumScaleFactor                          = 0.9
+        lineBreakMode                               = .byTruncatingTail
+        
         translatesAutoresizingMaskIntoConstraints   = false
     }
 }

@@ -10,6 +10,9 @@ import UIKit
 
 class FavoritesListViewController: UIViewController
 {
+    //----------------------------------------------------------------
+    // MARK:- View Lifecycle Methods
+    //----------------------------------------------------------------
     override func viewDidLoad()
     {
         super.viewDidLoad()

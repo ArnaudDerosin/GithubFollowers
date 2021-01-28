@@ -96,7 +96,7 @@ class SearchViewController: UIViewController
     {
         guard isUserNameEntered else
         {
-            print("No Username entered")
+            presentGFAlertOnMainThread(title: "Empty username", message: "Please enter a username. We need to know who to look for 😎", buttonTitle: "OK")
             return
         }
         
@@ -106,6 +106,7 @@ class SearchViewController: UIViewController
         navigationController?.pushViewController(followerListVC, animated: true)
     }
 }
+
 
 //--------------------------------------------------------------------
 // MARK:-

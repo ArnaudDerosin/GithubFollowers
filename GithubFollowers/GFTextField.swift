@@ -10,7 +10,9 @@ import UIKit
 
 class GFTextField: UITextField
 {
-    
+    //----------------------------------------------------------------
+    // MARK:- View Lifecycle Methods
+    //----------------------------------------------------------------
     override init(frame: CGRect)
     {
         super.init(frame: frame)
@@ -22,6 +24,10 @@ class GFTextField: UITextField
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    //----------------------------------------------------------------
+    // MARK:- Custom Methods
+    //----------------------------------------------------------------
     private func configure()
     {
         translatesAutoresizingMaskIntoConstraints = false
