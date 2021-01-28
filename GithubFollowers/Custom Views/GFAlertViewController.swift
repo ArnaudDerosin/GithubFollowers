@@ -18,11 +18,11 @@ class GFAlertViewController: UIViewController
     let messageLabel        = GFBodyLabel(textAlignement: .center)
     let actionButton        = GFButton(backgroundColor: .systemBlue, title: "OK")
     
-    var alertTitle: String?
-    var message: String?
-    var buttonTitle: String?
+    var alertTitle          : String?
+    var message             : String?
+    var buttonTitle         : String?
     
-    let padding: CGFloat = 20
+    let padding             : CGFloat = 20
     
     
     //----------------------------------------------------------------

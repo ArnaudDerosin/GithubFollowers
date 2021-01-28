@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/arnaudderosin/Development/Mobile Apps/iOS/GithubFollowers/GithubFollowers/Models/User.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/arnaudderosin/Development/Mobile Apps/iOS/GithubFollowers/GithubFollowers/Models/Follower.swift">
+   </FileRef>
+   <FileRef
       location = "group:../README.md">
    </FileRef>
    <FileRef
