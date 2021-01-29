@@ -14,6 +14,7 @@ class FollowerListViewController: UIViewController
     // MARK:- Properties
     //----------------------------------------------------------------
     var username: String!
+    var collectionView: UICollectionView!
     
     
     //----------------------------------------------------------------
@@ -22,6 +23,10 @@ class FollowerListViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        configureViewcontroller()
+        configureCollectionView()
+        getFollowers()
+        
         view.backgroundColor = .systemBackground
         navigationController?.isNavigationBarHidden = false
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -42,6 +47,27 @@ class FollowerListViewController: UIViewController
     {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    
+    //----------------------------------------------------------------
+    // MARK:- Custom Methods
+    //----------------------------------------------------------------
+    func configureViewcontroller()
+    {
+        
+    }
+    
+    func configureCollectionView()
+    {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+        view.addSubview(collectionView)
+        collectionView.backgroundColor = .systemPink
+        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
+    }
+    
+    func getFollowers() {
+        
     }
 
 }

@@ -33,7 +33,7 @@ class GFAvatarImageView: UIImageView
     //----------------------------------------------------------------
     // MARK:- Custom Methods
     //----------------------------------------------------------------
-    func configure()
+    private func configure()
     {
         layer.cornerRadius  = 10
         clipsToBounds       = true

@@ -55,7 +55,7 @@ class GFAlertViewController: UIViewController
     //----------------------------------------------------------------
     // MARK:- Custom Methods
     //----------------------------------------------------------------
-    func configureContainerView()
+    private func configureContainerView()
     {
         view.addSubview(containerView)
         
@@ -73,7 +73,7 @@ class GFAlertViewController: UIViewController
         ])
     }
     
-    func configureTitleLabel()
+    private func configureTitleLabel()
     {
         containerView.addSubview(titleLabel)
         titleLabel.text = alertTitle ?? "Something went wrong"
@@ -86,7 +86,7 @@ class GFAlertViewController: UIViewController
         ])
     }
     
-    func configureActionButton()
+    private func configureActionButton()
     {
         containerView.addSubview(actionButton)
         actionButton.setTitle(buttonTitle ?? "OK", for: .normal)
@@ -100,7 +100,7 @@ class GFAlertViewController: UIViewController
         ])
     }
     
-    func configureMessageLabel()
+    private func configureMessageLabel()
     {
         containerView.addSubview(messageLabel)
         messageLabel.text = message ?? "Something went wrong"
