@@ -12,6 +12,7 @@
 		FD7BD7B725C2D190005BEFCD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD7B625C2D190005BEFCD /* User.swift */; };
 		FD7BD7BC25C2D1D3005BEFCD /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD7BB25C2D1D3005BEFCD /* Follower.swift */; };
 		FD7BD7C025C3D592005BEFCD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD7BF25C3D592005BEFCD /* NetworkManager.swift */; };
+		FD7BD7C425C401DA005BEFCD /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD7C325C401DA005BEFCD /* ErrorMessage.swift */; };
 		FD86786625C10C3E00EC67F6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86786525C10C3E00EC67F6 /* SearchViewController.swift */; };
 		FD86786925C10CC900EC67F6 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */; };
 		FDD1549825C00D9700F45B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD1549725C00D9700F45B07 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		FD7BD7B625C2D190005BEFCD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "/Users/arnaudderosin/Development/Mobile Apps/iOS/GithubFollowers/GithubFollowers/Models/User.swift"; sourceTree = "<absolute>"; };
 		FD7BD7BB25C2D1D3005BEFCD /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		FD7BD7BF25C3D592005BEFCD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FD7BD7C325C401DA005BEFCD /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		FD86786525C10C3E00EC67F6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		FDD1549425C00D9700F45B07 /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 			children = (
 				FD7BD7AD25C2BB1E005BEFCD /* Storyboard */,
 				FDD154A025C00D9E00F45B07 /* Assets.xcassets */,
+				FD7BD7C325C401DA005BEFCD /* ErrorMessage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				FDD3D26225C27A6A00E16A37 /* GFBodyLabel.swift in Sources */,
 				FDD3D25F25C278C000E16A37 /* GFTitleLabel.swift in Sources */,
 				FDD1549825C00D9700F45B07 /* AppDelegate.swift in Sources */,
+				FD7BD7C425C401DA005BEFCD /* ErrorMessage.swift in Sources */,
 				FD7BD7C025C3D592005BEFCD /* NetworkManager.swift in Sources */,
 				FD86786925C10CC900EC67F6 /* FavoritesListViewController.swift in Sources */,
 				FDD1549A25C00D9700F45B07 /* SceneDelegate.swift in Sources */,
