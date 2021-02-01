@@ -17,6 +17,7 @@
 		FD7BD7CD25C41DEB005BEFCD /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD7CC25C41DEB005BEFCD /* GFAvatarImageView.swift */; };
 		FD86786625C10C3E00EC67F6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86786525C10C3E00EC67F6 /* SearchViewController.swift */; };
 		FD86786925C10CC900EC67F6 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */; };
+		FDAEBFEF25C80BA700F5C45A /* GFCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEBFEE25C80BA700F5C45A /* GFCollectionViewSection.swift */; };
 		FDD1549825C00D9700F45B07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD1549725C00D9700F45B07 /* AppDelegate.swift */; };
 		FDD1549A25C00D9700F45B07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD1549925C00D9700F45B07 /* SceneDelegate.swift */; };
 		FDD154A125C00D9E00F45B07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD154A025C00D9E00F45B07 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		FD7BD7CC25C41DEB005BEFCD /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		FD86786525C10C3E00EC67F6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		FDAEBFEE25C80BA700F5C45A /* GFCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFCollectionViewSection.swift; sourceTree = "<group>"; };
 		FDD1549425C00D9700F45B07 /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD1549725C00D9700F45B07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD1549925C00D9700F45B07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				FD7BD7AD25C2BB1E005BEFCD /* Storyboard */,
 				FDD154A025C00D9E00F45B07 /* Assets.xcassets */,
 				FD7BD7C325C401DA005BEFCD /* GFError.swift */,
+				FDAEBFEE25C80BA700F5C45A /* GFCollectionViewSection.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				FD7BD7A025C2ABE8005BEFCD /* GFAlertView.swift in Sources */,
 				FDDB9C2F25C1784C00BB9A0E /* GFButton.swift in Sources */,
 				FD7BD7CA25C41D76005BEFCD /* FollowerCell.swift in Sources */,
+				FDAEBFEF25C80BA700F5C45A /* GFCollectionViewSection.swift in Sources */,
 				FD7BD7CD25C41DEB005BEFCD /* GFAvatarImageView.swift in Sources */,
 				FD7BD7B725C2D190005BEFCD /* User.swift in Sources */,
 				FDD3D25C25C26D1000E16A37 /* FollowerListViewController.swift in Sources */,
