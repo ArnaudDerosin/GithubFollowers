@@ -6,7 +6,7 @@
 //  Copyright © 2021 Arnaud Derosin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager
 {
@@ -14,7 +14,8 @@ class NetworkManager
     // MARK:- Properties
     //----------------------------------------------------------------
     static let shared = NetworkManager()
-    let baseURL = "https://api.github.com/users/"
+    private let baseURL = "https://api.github.com/users/"
+    let cache = NSCache<NSString, UIImage>()
     
     
     //----------------------------------------------------------------

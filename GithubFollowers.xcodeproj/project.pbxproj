@@ -72,6 +72,7 @@
 		FD7BD7A225C2B583005BEFCD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FDD3D26625C28BEE00E16A37 /* GFAlertViewController.swift */,
 				FD86786525C10C3E00EC67F6 /* SearchViewController.swift */,
 				FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */,
 				FDD3D25B25C26D1000E16A37 /* FollowerListViewController.swift */,
@@ -83,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				FD7BD7C825C41D56005BEFCD /* Cells */,
-				FDD3D26625C28BEE00E16A37 /* GFAlertViewController.swift */,
 				FDD3D26125C27A6A00E16A37 /* GFBodyLabel.swift */,
 				FDDB9C2E25C1784C00BB9A0E /* GFButton.swift */,
 				FDDB9C3325C17DA000BB9A0E /* GFTextField.swift */,
