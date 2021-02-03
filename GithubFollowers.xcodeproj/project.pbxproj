@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD20179E25CA49A40003CE1B /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD20179D25CA49A40003CE1B /* GFEmptyStateView.swift */; };
+		FD2017A225CA71D70003CE1B /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2017A125CA71D70003CE1B /* UserInfoViewController.swift */; };
 		FD7BD79D25C2A1FA005BEFCD /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD79C25C2A1FA005BEFCD /* UIViewController+Ext.swift */; };
 		FD7BD7A025C2ABE8005BEFCD /* GFAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD79F25C2ABE8005BEFCD /* GFAlertView.swift */; };
 		FD7BD7B725C2D190005BEFCD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7BD7B625C2D190005BEFCD /* User.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		FD20179D25CA49A40003CE1B /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		FD2017A125CA71D70003CE1B /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		FD7BD79C25C2A1FA005BEFCD /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		FD7BD79F25C2ABE8005BEFCD /* GFAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertView.swift; sourceTree = "<group>"; };
 		FD7BD7B625C2D190005BEFCD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "/Users/arnaudderosin/Development/Mobile Apps/iOS/GithubFollowers/GithubFollowers/Models/User.swift"; sourceTree = "<absolute>"; };
@@ -120,6 +122,7 @@
 				FD86786525C10C3E00EC67F6 /* SearchViewController.swift */,
 				FD86786825C10CC900EC67F6 /* FavoritesListViewController.swift */,
 				FDD3D25B25C26D1000E16A37 /* FollowerListViewController.swift */,
+				FD2017A125CA71D70003CE1B /* UserInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				FDDB9C3425C17DA000BB9A0E /* GFTextField.swift in Sources */,
 				FDAEBFF225C919E900F5C45A /* UIHelper.swift in Sources */,
 				FD86786625C10C3E00EC67F6 /* SearchViewController.swift in Sources */,
+				FD2017A225CA71D70003CE1B /* UserInfoViewController.swift in Sources */,
 				FD7BD79D25C2A1FA005BEFCD /* UIViewController+Ext.swift in Sources */,
 				FD7BD7A025C2ABE8005BEFCD /* GFAlertView.swift in Sources */,
 				FDDB9C2F25C1784C00BB9A0E /* GFButton.swift in Sources */,
