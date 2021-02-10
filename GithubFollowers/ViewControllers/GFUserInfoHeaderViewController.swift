@@ -14,11 +14,11 @@ class GFUserInfoHeaderViewController: UIViewController
     // MARK:- Properties
     //----------------------------------------------------------------
     let avatarImageView     = GFAvatarImageView(frame: .zero)
-    let usernameLabel       = GFTitleLabel(textAlignement: .left, fontSize: 34)
+    let usernameLabel       = GFTitleLabel(textAlign: .left, fontSize: 34)
     let nameLabel           = GFSecondaryTitleLabel(fontSize: 18)
     let locationImageView   = UIImageView()
     let locationLabel       = GFSecondaryTitleLabel(fontSize: 18)
-    let bioLabel            = GFBodyLabel(textAlignement: .left)
+    let bioLabel            = GFBodyLabel(textAlign: .left)
     
     var user: User!
     

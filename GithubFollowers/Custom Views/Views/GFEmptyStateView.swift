@@ -13,7 +13,7 @@ class GFEmptyStateView: UIView
     //----------------------------------------------------------------
     // MARK:- Properties
     //----------------------------------------------------------------
-    let messageLabel    = GFTitleLabel(textAlignement: .center, fontSize: 28)
+    let messageLabel    = GFTitleLabel(textAlign: .center, fontSize: 28)
     let logoImageView   = UIImageView()
 
     
