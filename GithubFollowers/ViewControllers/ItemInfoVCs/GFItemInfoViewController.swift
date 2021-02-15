@@ -20,6 +20,7 @@ class GFItemInfoViewController: UIViewController
     var user: User!
     weak var delegate: UserInfoViewControllerDelegate!
     
+    
     //----------------------------------------------------------------
     // MARK:- View Lifecycle Methods
     //----------------------------------------------------------------

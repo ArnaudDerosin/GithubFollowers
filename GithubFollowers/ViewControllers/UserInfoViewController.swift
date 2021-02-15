@@ -28,6 +28,7 @@ class UserInfoViewController: UIViewController
     var username: String!
     weak var delegate: FollowerListViewController!
     
+    
     //----------------------------------------------------------------
     // MARK:- View Lifecycle Methods
     //----------------------------------------------------------------
