@@ -14,7 +14,7 @@ protocol UserInfoViewControllerDelegate: class
     func didTapGetFollowers(for user: User)
 }
 
-class UserInfoViewController: UIViewController
+class UserInfoViewController: GFDataLoadingViewController
 {
     //----------------------------------------------------------------
     // MARK:- Properties

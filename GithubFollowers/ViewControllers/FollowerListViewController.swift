@@ -14,7 +14,7 @@ protocol FollowerListViewControllerDelegate: class
 }
 
 
-class FollowerListViewController: UIViewController
+class FollowerListViewController: GFDataLoadingViewController
 {
     //----------------------------------------------------------------
     // MARK:- Properties
