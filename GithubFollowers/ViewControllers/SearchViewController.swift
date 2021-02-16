@@ -39,6 +39,7 @@ class SearchViewController: UIViewController
     {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        userNameTextField.text = ""
     }
     
     
@@ -91,7 +92,7 @@ class SearchViewController: UIViewController
     
     func createDismissKeyboardTapGesture()
     {
-        let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tapGesture)
     }
     
@@ -103,9 +104,9 @@ class SearchViewController: UIViewController
             return
         }
         
-        let followerListVC          = FollowerListViewController()
-        followerListVC.username     = userNameTextField.text
-        followerListVC.title        = userNameTextField.text
+        userNameTextField.resignFirstResponder()
+        
+        let followerListVC          = FollowerListViewController(username: userNameTextField.text!)
         navigationController?.pushViewController(followerListVC, animated: true)
     }
 }
