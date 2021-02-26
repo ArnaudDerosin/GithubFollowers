@@ -23,4 +23,5 @@ The goal of this review was to see full programmatic development, some of the fe
 
 # Special Thanks
 
-S/O to @SAllen0400 for this amazing course covering big main blocks of a project initiation.
+S/O to  Sean Allen [@SAllen0400](https://github.com/SAllen0400) for this amazing course covering big main blocks of a project initiation.
+
