@@ -1,16 +1,22 @@
 # GithubFollowers ⌨️
 Programmatic UI review without using any 3rd party libraries.
 
-The goal of this review was to see full programmatic development with:
+The goal of this review was to see full programmatic development, some of the features covered:
 
 <ul>
-<li>Uses no external libraries
-Created with programmatic layout
-Connects to different APIs on Github
-Caches images
-Automatic Dark Mode
-Full multiple device / iPad multitasking layout
-adding an account to favourites
+<li>No uses of external libraries
+<li>Custom UIViews (UIButton, UITextField, ..)
+<li>Custom UIAlerts
+<li>Handling Network calls with custom error messages
+<li>DL and Caching images
+<li>Automatic Dark Mode
+<li>UICollectionView (FlowLayout, Diffable Data Source)
+<li>Loading view, empty state view
+<li>Search functionnality
+<li>Pagination
+<li>Modals
+<li>Superclass/Subclass
+<li>Adding an account to favorites
 </ul>
 
 
